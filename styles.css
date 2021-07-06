@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 800px) 1fr;
+}
+.content {
+  grid-column: 2;
+  font-size: 18px;
+  padding: 0 25px;
+}
+ul {
+  margin: 0;
+}
+li {
+  line-height: 30px;
+}
+.title {
+  color: #446a91;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 20px 0;
+}
+.face {
+  margin-top: 30px;
+  display: grid;
+  grid-auto-flow: column;
+}
+.face__image {
+  justify-self: center;
+  align-self: center;
+}
+.face__image img {
+  width: 250px;
+}
+.face__text {
+}
+.face__title {
+  justify-self: center;
+  text-align: center;
+  padding-top: 0;
+}
+.title {
+}
+.aboutMe {
+}
+.aboutMe__title {
+}
+.aboutMe__text {
+}
+.education {
+}
+.education__title {
+}
+.education__text {
+}
+.projects {
+  padding-bottom: 30px;
+}
+.projects__title {
+}
+
+@media (max-width: 750px) {
+  .face__image {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
